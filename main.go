@@ -89,21 +89,3 @@ func resizeAreaAverage(img image.Image, newWidth int) *image.RGBA {
 
 	return newImage
 }
-
-// for y in 0 .. new_height-1:
-//         for x in 0 .. new_width-1:
-//             start_x = x * scale_x
-//             end_x = (x+1) * scale_x
-//             start_y = y * scale_y
-//             end_y = (y+1) * scale_y
-
-//             sum_color = (0,0,0)
-//             count = 0
-//             for sy in start_y .. end_y-1:
-//                 for sx in start_x .. end_x-1:
-//                     sum_color += image[sx, sy]
-//                     count += 1
-
-//             new_image[x,y] = sum_color / count
-
-//     return new_image
